@@ -1,0 +1,19 @@
+//numeros al azar pero van cambiando
+#include<iostream>
+#include<time.h>
+//time.h librería que contiene funciones relacionadas con el tiempo
+#include<stdlib.h>
+int main(){
+  int cont, num, salir, samilla;
+  semilla=time(0);
+  //semilla es un numero entero que voy a rellenar con el tiempo desde una fecha fija
+  //srand() permite saber por donde va a empzar a leer
+  srand(semilla);
+  for(cont=0;cont<10;cont++){
+    num=rand()%10+1;
+    std::cout<<num<<" ";
+  }
+  std::cin>>salir;
+  return 0;
+}
+  
