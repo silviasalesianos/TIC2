@@ -1,0 +1,12 @@
+//10 numeros al azar entre 0 y 10
+#include<iostream>
+#include<stdlib.h>
+int main(){
+  int cont, num, salir;
+  for (cont=0;cont<10;cont++){
+    num=rand()%10+1;
+    std::cout<<num<<" ";
+  }
+  std::cin>>salir;
+  return 0;
+}
