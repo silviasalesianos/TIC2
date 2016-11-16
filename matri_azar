@@ -1,7 +1,7 @@
+//matriz en la que los numeros son aleatorios
 #include<iostream>
 #include<stdlib.h>
 //la librería stdlib.h sirve para poder utilizar rand
-//matriz en la que los numeros son aleatorios
 int main(){
 	int matriz[3][3];
 	int fil, col, num, salir;
