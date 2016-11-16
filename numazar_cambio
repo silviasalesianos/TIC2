@@ -4,7 +4,7 @@
 //time.h librería que contiene funciones relacionadas con el tiempo
 #include<stdlib.h>
 int main(){
-  int cont, num, salir, samilla;
+  int cont, num, salir, semilla;
   semilla=time(0);
   //semilla es un numero entero que voy a rellenar con el tiempo desde una fecha fija
   //srand() permite saber por donde va a empzar a leer
