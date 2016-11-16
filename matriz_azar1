@@ -1,0 +1,15 @@
+//programa para matriz 3x3 de 0 y 1
+#include<iostream>
+#include<stdlib.h>
+#include<time.h>
+int main(){
+  int fil, col, num, matriz, salir;
+  srand(time(0));
+  for(fil=0;fil<3;fil++){
+    for(col=0;col<3;col++){
+      matriz[fil][col]=rand()%2
+    }
+  }
+  std::cin>>salir;
+  return 0;
+}
