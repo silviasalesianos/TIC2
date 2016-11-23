@@ -1,0 +1,27 @@
+//sudoku sin repetir numeros
+#include<iostream>
+#include<stdlib.h>
+int main(){
+  int fil, col, num, salir;
+  int matriz[3][3];
+  srand(time(0));
+  for(fil=0;fil<3;fil++){
+    for(col=0;col<3;col++){
+      num=rand()%9+1;
+        for(fil=0;fil<3;fil++){
+          for(col=0;col<3;col++){
+      
+          }
+        }
+        matriz[fil][col]=num;
+      std::cout<<
+    std::cout<<"\n";
+  }
+      std::cout<<matriz[fil][col];
+    }
+    std::cout<<"\n";
+  }
+  std::cin>>salir;
+  return 0;
+}
+    
