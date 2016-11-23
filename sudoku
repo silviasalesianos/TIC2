@@ -1,27 +1,37 @@
-//sudoku sin repetir numeros
 #include<iostream>
 #include<stdlib.h>
+#include<time.h>
 int main(){
-  int fil, col, num, salir;
-  int matriz[3][3];
-  srand(time(0));
-  for(fil=0;fil<3;fil++){
-    for(col=0;col<3;col++){
-      num=rand()%9+1;
-        for(fil=0;fil<3;fil++){
+    int fil,col;
+    int fil2,col2;
+    int num,salir;
+    char sirve='s'; 
+    int matrix[3][3];
+    srand(time(0));
+    for(fil=0;fil<3;fil++){
           for(col=0;col<3;col++){
-      
-          }
-        }
-        matriz[fil][col]=num;
-      std::cout<<
-    std::cout<<"\n";
-  }
-      std::cout<<matriz[fil][col];
+              
+              do{
+                sirve='s';
+                num=rand()%9+1;
+                 //comparador
+                 for(fil2=0;fil2<3;fil2++){
+                     for(col2=0;col2<3;col2++){
+                         if(num==matrix[fil2][col2]){
+                              sirve='n';
+                         } 
+                               
+                     }                 
+                  }
+              }while(sirve=='n');  
+              matrix[fil][col]=num; 
+              sirve='s';
+              std::cout<<matrix[fil][col];
+          } 
+          std::cout<<"\n";          
     }
-    std::cout<<"\n";
-  }
-  std::cin>>salir;
-  return 0;
-}
+    std::cin>> salir;
+    return 0;
     
+     
+}
