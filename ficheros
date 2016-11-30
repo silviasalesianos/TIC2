@@ -1,0 +1,13 @@
+pag 129 (ruta relativa, ruta absoluta,
+#include<fstream>
+//los include son ficheros de cabecera
+//fstream contiene las funciones que nos van a permitir escribir dentro del fichero de texto (ej:bloc de notas) (.txt)
+#include<fstream>
+int main(){
+    //vas a ir a la Ram y vas a reservar un trozo de memoria para escribir un fichero
+    ofstream fichero("prueba.txt");
+    //ruta=indicacion de en que punto queremos guardar un fichero
+    //absoluta=cuando indicamos con total precision las carpetas y los ficheros donde queremos que se guarde
+    //relativa= indica la posicion con respecto a la carpeta que trabajamos
+    
+
