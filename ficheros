@@ -9,5 +9,10 @@ int main(){
     //ruta=indicacion de en que punto queremos guardar un fichero
     //absoluta=cuando indicamos con total precision las carpetas y los ficheros donde queremos que se guarde
     //relativa= indica la posicion con respecto a la carpeta que trabajamos
+    //para bajar de directorio hay que poner cd.. y asi te quedarias en "c:\misdocumentos\antonio
+    //con "dir" se ve lo que hay en el directorio en el que estamos
+    //para subir hay que poner cd sin los puntos subes de directorio (haces el camino inverso a cd..)
+    //si pones help salen los comandos y para que sirve cada uno
+    
     
 
