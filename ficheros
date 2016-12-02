@@ -14,5 +14,23 @@ int main(){
     //para subir hay que poner cd sin los puntos subes de directorio (haces el camino inverso a cd..)
     //si pones help salen los comandos y para que sirve cada uno
     
+    #include<fstream.h>
+#include<iostream>
+int main(){
+    int salir;
+//reserva en el cuerpo principal un espacio para el fichero
+    ofstream fichero("prueba.txt");
+    fichero<<"esto es una prueba"; //endl significa que pasas a otra linea
+    fichero.close();
+    std::cout<<"hemos terminado para siempre";
+    std::cin>>salir;
+//.txt texto; .docx word reciente; odt openoffice; .jpg imagen; .mp3 audio; .mpeg video; .exe ejecutable
+//.cpp compilable;  .cvs calendario; .html pagina web; .rar fichero comprimido; .zip igual que rar pero mas antiguo (para comprimir)
+//llamamos ficheros binarios a aquellos que me puedo inventar, por ejemplo x
+//las terminaciones tienen un icono y un hueco en la memoria. Tambien el programa con el que se abre
+      
+}
+
+    
     
 
