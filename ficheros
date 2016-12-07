@@ -14,7 +14,7 @@ int main(){
     //para subir hay que poner cd sin los puntos subes de directorio (haces el camino inverso a cd..)
     //si pones help salen los comandos y para que sirve cada uno
     
-    #include<fstream.h>
+#include<fstream.h>
 #include<iostream>
 int main(){
     int salir;
@@ -30,6 +30,34 @@ int main(){
 //las terminaciones tienen un icono y un hueco en la memoria. Tambien el programa con el que se abre
       
 }
+
+
+
+
+#include<fstream.h>
+#include<iostream>
+int main(){
+    std::ofstream fichero("prueba.txt");
+    std::fichero<<"una linea"<<std::endl;
+    fichero.close();
+}
+
+
+
+#include<iostream>
+#include<fstream>
+#include<string> //para caracteres
+int main(){
+    int salir;
+    std::ifstream fichero("prueba.txt");
+    std::string linea; //es parecido a int x = se declara un caracter que es un vector que es lo mismo que una cadena de caracteres
+    getline(fichero,linea);//abre un fichero y lee una linea(la primera) y la guarda
+    std::cout<<linea;
+    fichero.close();
+    std::cin>>salir;
+    return 0;
+}
+    
 
     
     
