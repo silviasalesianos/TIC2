@@ -1,0 +1,14 @@
+-reserva de estructura de variables (int, float,...)
+-vectores: en vez de guardar memoria paraun dato guardamos espacio para varios datos. Estos datos son del mismo tipo (mismo tamaño) y ocupan casillas contiguas
+-matrices: el ordenador reserva sitio para un vector de tres posiciones. En una de esa posicion se puede meter un directorio de memoria
+            en una posición se puede guardar una "llave" (puntero) para ir a otrastres posiciones y asi sucesivamente 
+            cada nuevo puntero con tres posiciones sería cada fila de la matriz
+            Esto permite guardar algo de más de una dimensión en un sistema de solo una dimensión
+Las matrices en verdad no son cuadradas, son una larga lista porque la memoria no tiene dos dimensiones
+-Teorema fundamental de la numeración: sistema hexadecimal (numeros y letras)
+-Puntero: sirve para guardar listas de cosas de más de una dimensión en un sistema de más dimensiones
+-cuando pongo el nombre de la matriz (LISTA) te lleva a la primera posición de la memoria guardada
+-cuando estas en una casilla y quieres leer lo de dentro pones "lista*" en vez de leer la posicion sin mas
+-
+
+
