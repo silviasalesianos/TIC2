@@ -1,1 +1,71 @@
+//va a salir el mismo numero que metas tu
+#include<stdio.h>
+int main(){
+  int x;
+  printf("introduce x ");
+  scanf("%d",&x); //lee un numero entero (porcentaje) y lo vas guardando en x
+  printf("la variable x= %d",x);
+  getchar(); //para que no se vaya la pantalla y espera
+  getchar(); 
+}
+
+-version 2 del mismo programa: solo sale 18
+#include<stdio.h>
+int main(){
+  int x;
+  x=18;
+  printf("%d", x);
+  getchar(); //para que no se vaya la pantalla y espera
+  getchar(); 
+}
+
+-version 3
+//no sale la variable, sale la direccion de memoria en la que se encuentra
+#include<stdio.h>
+int main(){
+  int x;
+  x=18;
+  printf("%x", &x);
+  getchar(); //para que no se vaya la pantalla y espera
+  getchar(); 
+}
+
+-version 4
+//no sale la variable, sale la direccion de memoria en la que se encuentra
+#include<stdio.h>
+int main(){
+  int a,b; //x=nombre de la variable
+  a=1; //valor de la variable
+  b=2;
+  printf("dirección de la variable x=%x", &a); //& para dirección de memoria en RAM
+  printf("\n dirección de la variable y=%x", &b);
+  getchar(); //para que no se vaya la pantalla y espera
+  getchar(); 
+  
+}
+
+
+
+-DESCRIPTORES
+//%d enteros
+//%c letras
+//%f decimales (coma flotante)
+//%x direccion de memoria
+
+-version 5
+#include<stdio.h>
+int main(){
+  int a; 
+  int *pa; 
+  a=2;
+  pa=&a;//puntero que apunta a A. El * es para guardar la direccion de A
+  printf("a=%d",a); 
+  printf("\n dirección de la variable a=%x", &a);
+  printf("\n pa%x",pa);
+  getchar(); 
+  getchar(); 
+}
+
+
+-version 6 
 
