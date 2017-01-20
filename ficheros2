@@ -68,4 +68,81 @@ int main(){
 
 
 -version 6 
+#include<stdio.h>
+int main(){
+    int a,b;
+    a=2;
+    printf("a=%d",a);
+    getchar();
+    getchar();
+}
+
+-version 7
+#include<stdio.h>
+int main(){
+    char letra;
+    letra='i';
+    printf("letra=%x",&letra);
+    getchar();
+    getchar();
+}
+
+-version 8
+#include<stdio.h>
+int main(){
+   int lista[3];
+   lista[0]=3;
+   lista[1]=2;
+   lista[2]=1;
+   printf ("lista[0]=%d",lista[0]);
+   printf ("\nlista[1]=%d",lista[1]);
+   printf ("\nlista[2]=%d",lista[2]);
+   getchar();
+   getchar();
+}
+
+-version 9
+#include<stdio.h>
+int main(){
+   int lista[3];
+   lista[0]=3;
+   lista[1]=2;
+   lista[2]=1;
+   printf ("lista[0]=%x",&lista[0]);
+   printf ("\nlista[1]=%x",&lista[1]);
+   printf ("\nlista[2]=%x",&lista[2]);
+   getchar();
+   getchar();
+}
+
+-version 10
+#include<stdio.h>
+int main(){
+   int lista[3];
+   lista[0]=3;
+   lista[1]=2;
+   lista[2]=1;
+   printf ("lista=%x",&lista);
+   //si pones el nombre del vector lista te saca la posición del primer elemento de ese vector
+   
+   getchar();
+   getchar();
+}
+
+-version 11 //para meterte en la primera posicion de la direccion
+#include<stdio.h>
+int main(){
+   int lista[3];
+   lista[0]=3;
+   lista[1]=2;
+   lista[2]=1;
+   printf ("%d",*lista); tambien puede ser ("%d",+(lista+1)) //con el +1 sacara la segunda posicion
+  
+   
+   getchar();
+   getchar();
+}
+
+-version 12
+
 
