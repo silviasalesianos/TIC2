@@ -1,0 +1,63 @@
+//guardar edad. altura(cm), nombre
+//sale ya el nombre y la edad sin pedirlo
+#include<iostream>
+using namespace std;//con esto no haria falta poner std en las salidas de abajo
+int main(){
+    int salir;
+    struct{//guarar varios datos en posiciones contiguas
+            string nombre; //string e int son los campos de la estructura
+            int edad;//string es para guardar un grupo de letras, int numero entero
+    }alumno; //nombre de la estructura
+    alumno.nombre="Marcos";
+    alumno.edad=17;
+    std::cout<<"El alumno se llama: "<<alumno.nombre;
+    std::cout<<"y tiene "<<alumno.edad<<"años";
+    std::cin>>salir;
+    return 0;
+}
+
+
+//sale ya el nombre y la edad sin pedirlo
+#include<iostream>
+using namespace std;
+int main(){
+    int salir;
+    struct alumno{
+            std::string nombre; 
+            int edad;
+    };
+    alumno infor[30]; //con esto le digo que me guarde memoria para el nombre y la edad
+    //infor es un array de alumnos que caben 30 datos de alumnos con su nombre y edad
+    infor[0].nombre= "Carmen";
+    infor[0].edad= 17;
+    std::cout<<"El alumno se llama: "<< infor[0].nombre;
+    std::cout<<"y tiene "<<infor[0].edad<<"años";
+    std::cin>>salir;
+    return 0;
+}
+
+
+//meter varios amigos tu mismo con su nombre y telefono, solo 3 amigos y si quieres mas cambiar el tamñao del vector
+#include<iostream>
+using namespace std;
+int main(){
+    int salir;
+    struct amigo{
+            string nombre; 
+            float telefono;//porque el telefono es demasiado grande no se puede int
+    };
+    amigo lista[3]; 
+    int cont;
+    for (cont=0;cont<3;cont++){
+        cout<<"dime tu nombre: ";
+        cin>>lista[cont].nombre;
+        cout<<"dime tu telefono: ";
+        cin>>lista[cont].telefono;
+    }
+    std::cin>>salir;
+    return 0;
+}
+
+
+
+
