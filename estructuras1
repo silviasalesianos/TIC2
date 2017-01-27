@@ -59,6 +59,63 @@ int main(){
 }
 
 
+//para hacer triangulo
+#include<iostream>
+using namespace std;
+int main(){
+    int salir;
+    struct punto{
+            int x; 
+            int y;
+    };
+    punto triangulo1[3];
+    int cont;
+    for (cont=0;cont<3;cont++){
+        cout<<"\ndi la coordenada x: ";
+        cin>>triangulo1[cont].x;
+        cout<<"di la coordenada y: ";
+        cin>>triangulo1[cont].y;
+        cout<<"las coordenadas del triangulo son: "<<triangulo1[cont].x<<","<<triangulo1[cont].y;
+        }
+    std::cin>>salir;
+    return 0;
+}
+
+
+//triangulo 2
+#include<iostream>
+using namespace std;
+int main(){
+    int salir;
+    struct punto{
+            int x; 
+            int y;
+    };
+    punto triangulo1[3];
+    int cont;
+    for (cont=0;cont<3;cont++){
+        cout<<"\ndi la coordenada x: ";
+        cin>>triangulo1[cont].x;
+        cout<<"di la coordenada y: ";
+        cin>>triangulo1[cont].y;
+        }
+    for(cont=0;cont<3;cont++){
+                              cout<<"\ncoord vertice"<<(cont+1);
+                              cout<<" x="<<triangulo1[cont].x;
+                              cout<<" Y="<<triangulo1[cont].y;
+    }
+    std::cin>>salir;
+    return 0;
+}
+
+
+
+
+
+
+
+
+
 
 
 
