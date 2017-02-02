@@ -7,7 +7,13 @@ pag 61
 -el meta es la informacion que tiene que ver con el formato de la pagina en general. una de ellas es charset que es
 el tipo de caracteres que vas a poder usar. no necesita marca de cierre
 -comentarios: <!--esto es un comentario en html-->
--
+-ul es una lista desordenada
+-il es para que salga un boliche para enumerar la lista
+-ol es para que la lista sea ordenada
+-div es para hacer una lista de cosas
+-tr es fila de tabla
+-td es columna de tabla
+-colspan es para juntar dos columnas, sin que esten separadas (fusionarlas)
 *pagina1
   <html>
 	  <head>
@@ -39,4 +45,127 @@ el tipo de caracteres que vas a poder usar. no necesita marca de cierre
 	</head>
 	<body>
 		 <h1 style="color:red; text-align:center; width:200px; height:200px">Hola carabola</h1>
+</html>
+
+*pagina4
+<html>
+	<head>
+		<title> Mi primera página</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		 
+		<div>
+			<ol>
+				<li> Melchor</li>
+				<li> Gaspar</li>
+				<li> Baltasar</li>
+			</ol>
+		</div>
+	</body>
+</html>
+
+*pagina5
+<html>
+	<head>
+		<title> Mi primera página</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		 <table border="3">
+			<tr>
+				<td colspan="3">DATOS</td>
+			</tr>
+			<tr>
+				<td>A</td>
+				<td>1</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>B</td>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+			
+		 </table>
+	</body>
+</html>
+
+*pagina6
+<html>
+	<head>
+		<title> Mi primera página</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		 
+		<div>
+			<ol>
+				<li> levantarme</li>
+					<ol>
+						<li>retirar la ropa de cama</li>
+						<li>incorporar el tronco</li>
+						<li>apoyas un pie en el suelo</li>
+						<li>apoyas el otro pie en el suelo</li>
+						<li>separar el trasero de la cama</li>
+					</ol>
+				<li> desayunar</li>
+					<ol>
+						<li>sacar el vaso y la leche</li>
+						<li>calentarlo en el microondas</li>
+					</ol>
+						
+				<li>volver a dormir</li>
+					
+			</ol>
+		</div>
+	</body>
+</html>
+
+*pagina7
+<html>
+	<head>
+		<title> Mi primera página</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		 <table border="1">
+			<tr>
+				<td>A</td>
+				<td>B</td>
+				<td>C</td>
+			</tr>
+			<tr>
+				<td>D</td>
+				<td>E</td>
+				<td>F</td>
+			</tr>
+			
+		 </table>
+	</body>
+</html>
+
+
+*pagina8
+<html>
+	<head>
+		<title> Mi primera página</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		 <table border="1">
+			<tr>
+				<td colspan="2"> perro </td>
+				<td> 1 </td>
+			</tr>
+			<tr>
+				<td> A </td>
+				<td colspan="2"> casa </td>
+				<td rowspan="2"> tu </td>
+			</tr>
+			<tr>
+				<td colspan="2"> vale </td>
+			</tr>
+		</table>
+	</body>
 </html>
