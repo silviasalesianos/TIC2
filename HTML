@@ -14,6 +14,7 @@ el tipo de caracteres que vas a poder usar. no necesita marca de cierre
 -tr es fila de tabla
 -td es columna de tabla
 -colspan es para juntar dos columnas, sin que esten separadas (fusionarlas)
+-src es source
 *pagina1
   <html>
 	  <head>
@@ -146,7 +147,7 @@ el tipo de caracteres que vas a poder usar. no necesita marca de cierre
 </html>
 
 
-*pagina8
+*pagina8 //juntar varias columnas de las filas
 <html>
 	<head>
 		<title> Mi primera página</title>
@@ -160,8 +161,12 @@ el tipo de caracteres que vas a poder usar. no necesita marca de cierre
 			</tr>
 			<tr>
 				<td> A </td>
+				<td colspan="2"> venga </td>
+				
+			</tr>
+			<tr>
 				<td colspan="2"> casa </td>
-				<td rowspan="2"> tu </td>
+				<td rowspan="2"> tú </td>
 			</tr>
 			<tr>
 				<td colspan="2"> vale </td>
@@ -169,3 +174,31 @@ el tipo de caracteres que vas a poder usar. no necesita marca de cierre
 		</table>
 	</body>
 </html>
+
+*pagina9
+<html>
+	<head>
+		<title> Mi primera página</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+	<img src="descarga.jpg"> //se pone la direccion de la pagina web o del nombre delarchivo del escritorio
+		</table>
+	</body>
+</html>
+
+*pagina10 //hipervinculos
+<html>
+	<head>
+		<title> Mi primera página</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<a href="https://google.com"> enlace</a> //en las "" puedes poner cualquier direccion y en lo escrito (enlace) el nombre del hipervinculo que te saldra a ti
+		
+	</body>
+</html>
+
+*pagina11
+
+
